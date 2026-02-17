@@ -1,0 +1,62 @@
+task1
+mkdir task2
+sudo adduser cs316_devops_user_1
+sudo adduser cs316_devops_user_2
+sudo adduser cs316_devops_user_3
+sudo adduser cs316_devops_user_4
+sudo adduser cs316_devops_user_5
+cut -d: -f1 /etc/passwd | grep cs316
+task2
+sudo groupadd fcse
+sudo groupadd fee
+sudo groupadd fes
+sudo groupadd fme
+sudo groupadd fcve
+
+sudo usermod -aG fcse cs316_devops_user_1
+sudo usermod -aG fee cs316_devops_user_2
+sudo usermod -aG fes cs316_devops_user_3
+sudo usermod -aG fme cs316_devops_user_4
+sudo usermod -aG fcve cs316_devops_user_5
+
+groups cs316_devops_user_1
+groups cs316_devops_user_2
+groups cs316_devops_user_3
+groups cs316_devops_user_4
+groups cs316_devops_user_5
+task3
+sudo visudo
+cs316_devops_user_2 ALL=(ALL) /sbin/reboot    (added at bottom )
+task4
+sudo usermod -aG sudo cs316_devops_user_1
+groups cs316_devops_user_1
+task5
+su - cs316_devops_user_1
+ssh-keygen -t rsa -f ~/.ssh/cs316_devops_user_1_key
+ls ~/.ssh
+exit
+su - cs316_devops_user_2
+ssh-keygen -t rsa -f ~/.ssh/cs316_devops_user_2_key
+ls ~/.ssh
+exit
+su - cs316_devops_user_3
+ssh-keygen -t rsa -f ~/.ssh/cs316_devops_user_3_key
+ls ~/.ssh
+exit
+su - cs316_devops_user_4
+ssh-keygen -t rsa -f ~/.ssh/cs316_devops_user_4_key
+ls ~/.ssh
+exit
+su - cs316_devops_user_5
+ssh-keygen -t rsa -f ~/.ssh/cs316_devops_user_5_key
+ls ~/.ssh
+exit
+task6
+ssh user5
+
+task8 
+sudo nano /etc/ssh/sshd_config
+changed added port 25 also 
+sudo systemctl restart ssh
+ss -tuln | grep 22
+
