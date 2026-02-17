@@ -1,0 +1,6 @@
+mkdir -p ~/devops_assignment/task1
+cd ~/devops_assignment/task1
+lsb_release -a
+uname -a
+whoami
+
