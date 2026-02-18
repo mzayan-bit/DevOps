@@ -1,0 +1,57 @@
+
+
+# 1. Update package inventory and save output
+sudo apt update | tee task4-1.txt
+
+# 2. Show nano package details and save output
+apt show nano | tee task4-2.txt
+
+# 3. Upgrade nano editor
+sudo apt install --only-upgrade nano -y
+
+# Install Apache
+sudo apt install apache2 -y
+systemctl status apache2
+hostname -I
+
+# Install PHP
+sudo apt install php php-mysql libapache2-mod-php -y
+php -v
+
+# Enable correct Apache modules (Ubuntu 24 fix)
+sudo a2dismod mpm_event
+sudo a2enmod mpm_prefork
+sudo systemctl restart apache2
+
+# Install MariaDB
+sudo apt install mariadb-server -y
+sudo mysql_secure_installation
+
+# Check Apache Document Root
+apache2ctl -S | grep DocumentRoot
+
+# Download Adminer
+cd /var/www/html
+sudo wget https://github.com/vrana/adminer/releases/latest/download/adminer.php -O adminer.php
+sudo chown www-data:www-data adminer.php
+sudo chmod 644 adminer.php
+
+# Download WordPress
+cd ~
+wget https://wordpress.org/latest.tar.gz
+tar -xvzf latest.tar.gz
+
+# Copy WordPress to Apache root
+sudo cp -r wordpress/* /var/www/html/
+
+# Fix permissions
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
+
+# Restart Apache
+sudo systemctl restart apache2
+
+# WordPress URL
+# Visit in browser:
+# http://YOUR-IP/
+# http://YOUR-IP/wp-admin
