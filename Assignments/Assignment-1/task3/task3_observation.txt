@@ -1,0 +1,3 @@
+Users belonging to a group can create files in their assigned department directory.
+Users outside the group cannot create files because of restricted permissions.
+ACL allows additional users or groups to access directories even if they are not original owners.

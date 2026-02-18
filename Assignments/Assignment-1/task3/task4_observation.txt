@@ -1,0 +1,3 @@
+Root user can find all files.
+Group member can only find files in allowed directories.
+Non-group members cannot access restricted directories.

@@ -1,0 +1,35 @@
+# Task 3.4 Commands
+
+cd ~/task3-4
+ls
+
+# Create compressed bundle
+tar -czvf files_backup.tar.gz *
+
+# Delete files
+rm -f *
+
+# Verify deletion
+ls
+
+# Restore files
+tar -xzvf files_backup.tar.gz
+ls
+
+# Find files modified within last 3 months
+find . -type f -mtime -90
+
+# Find files larger than 100KB
+find . -type f -size +100k
+
+# Find files containing digit 3
+find . -type f -name "*3*"
+
+# Delete files larger than 100KB and older than 2 months
+find . -type f -size +100k -mtime +60 -delete
+
+# Delete files created within last 10 days
+find . -type f -ctime -10 -delete
+
+# Delete files smaller than 1KB and older than 4 months
+find . -type f -size -1k -mtime +120 -delete
