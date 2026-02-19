@@ -1,0 +1,8 @@
+tmpfs 391M 1%
+efivarfs 256K 6%
+/dev/mapper/ubuntu--vg-ubuntu--lv 30G 40%
+tmpfs 2.0G 0%
+tmpfs 5.0M 1%
+/dev/vda2 2.0G 6%
+/dev/vda1 1.1G 1%
+tmpfs 391M 1%

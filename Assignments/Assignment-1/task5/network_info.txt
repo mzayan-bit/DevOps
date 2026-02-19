@@ -1,0 +1,36 @@
+enp0s1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.64.3  netmask 255.255.255.0  broadcast 192.168.64.255
+        inet6 fde0:67d7:3cb4:dc9e:948d:1dff:fe94:35c9  prefixlen 64  scopeid 0x0<global>
+        inet6 fde0:67d7:3cb4:dc9e:6764:7c7e:8a7a:ceb  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::948d:1dff:fe94:35c9  prefixlen 64  scopeid 0x20<link>
+        ether 96:8d:1d:94:35:c9  txqueuelen 1000  (Ethernet)
+        RX packets 9916  bytes 11886821 (11.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5234  bytes 1748238 (1.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 154  bytes 16628 (16.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 154  bytes 16628 (16.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 96:8d:1d:94:35:c9 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.64.3/24 brd 192.168.64.255 scope global dynamic noprefixroute enp0s1
+       valid_lft 3225sec preferred_lft 3225sec
+    inet6 fde0:67d7:3cb4:dc9e:6764:7c7e:8a7a:ceb/64 scope global temporary dynamic 
+       valid_lft 602627sec preferred_lft 83928sec
+    inet6 fde0:67d7:3cb4:dc9e:948d:1dff:fe94:35c9/64 scope global dynamic mngtmpaddr 
+       valid_lft 2591939sec preferred_lft 604739sec
+    inet6 fe80::948d:1dff:fe94:35c9/64 scope link 
+       valid_lft forever preferred_lft forever

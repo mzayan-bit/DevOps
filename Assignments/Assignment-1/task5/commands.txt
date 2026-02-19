@@ -1,0 +1,27 @@
+# Hardware Information
+uname -a > system_info.txt
+cat /proc/cpuinfo >> system_info.txt
+cat /proc/meminfo >> system_info.txt
+
+df -h > disk_info.txt
+du -sh /home >> disk_info.txt
+cat /proc/partitions >> disk_info.txt
+cat /etc/fstab >> disk_info.txt
+
+ifconfig > network_info.txt
+ip addr >> network_info.txt
+
+# Process Monitoring
+ps aux > processes.txt
+sleep 10 &
+jobs > background_jobs.txt
+top -b -n 1 > active_processes.txt
+
+# Mounted File Systems
+df -h > mounted_fs.txt
+
+# Custom Mounted File System Report
+df -h | awk 'NR>1 {print $1, $2, $5}' > <your_reg_number>_mfsu.txt
+
+# Free Memory
+free -h > free_memory.txt

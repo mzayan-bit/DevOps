@@ -1,0 +1,39 @@
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              391M  1.8M  389M   1% /run
+efivarfs                           256K   15K  242K   6% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv   30G   12G   18G  40% /
+tmpfs                              2.0G     0  2.0G   0% /dev/shm
+tmpfs                              5.0M  8.0K  5.0M   1% /run/lock
+/dev/vda2                          2.0G  108M  1.7G   6% /boot
+/dev/vda1                          1.1G  6.4M  1.1G   1% /boot/efi
+tmpfs                              391M  124K  391M   1% /run/user/1000
+489M	/home
+major minor  #blocks  name
+
+   7        0          4 loop0
+   7        1      70600 loop1
+   7        2     241388 loop2
+   7        3     515032 loop3
+   7        4      93888 loop4
+   7        5      42600 loop5
+   7        6     224472 loop6
+ 253        0   67108864 vda
+ 253        1    1100800 vda1
+ 253        2    2097152 vda2
+ 253        3   63908864 vda3
+ 252        0   31952896 dm-0
+  11        0    1048575 sr0
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-m4DsfvkWWSOkIkB3MMAWDARB9yYZfA1NHfnxw0YNSJExGttHlRxeY1BHmKGNibYQ / ext4 defaults 0 1
+# /boot was on /dev/vda2 during curtin installation
+/dev/disk/by-uuid/60b0e59b-8001-43da-9cf5-72b118acba96 /boot ext4 defaults 0 1
+# /boot/efi was on /dev/vda1 during curtin installation
+/dev/disk/by-uuid/FD58-F93C /boot/efi vfat defaults 0 1
+/swap.img	none	swap	sw	0	0

@@ -1,0 +1,91 @@
+Linux zayanlab 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:39:21 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint bf16 bti afp
+CPU implementer	: 0x61
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x000
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint bf16 bti afp
+CPU implementer	: 0x61
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x000
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint bf16 bti afp
+CPU implementer	: 0x61
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x000
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp flagm2 frint bf16 bti afp
+CPU implementer	: 0x61
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x000
+CPU revision	: 0
+
+MemTotal:        3995952 kB
+MemFree:         1567076 kB
+MemAvailable:    2705684 kB
+Buffers:           52756 kB
+Cached:          1237348 kB
+SwapCached:            0 kB
+Active:          1456752 kB
+Inactive:         637820 kB
+Active(anon):     867032 kB
+Inactive(anon):        0 kB
+Active(file):     589720 kB
+Inactive(file):   637820 kB
+Unevictable:       42532 kB
+Mlocked:           26244 kB
+SwapTotal:       3995644 kB
+SwapFree:        3995644 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:        847004 kB
+Mapped:           343200 kB
+Shmem:             55120 kB
+KReclaimable:      77060 kB
+Slab:             196504 kB
+SReclaimable:      77060 kB
+SUnreclaim:       119444 kB
+KernelStack:        9840 kB
+ShadowCallStack:    2476 kB
+PageTables:        20768 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5993620 kB
+Committed_AS:    5820344 kB
+VmallocTotal:   133141626880 kB
+VmallocUsed:       29516 kB
+VmallocChunk:          0 kB
+Percpu:             2800 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:          32768 kB
+CmaFree:           31104 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
