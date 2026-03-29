@@ -1,0 +1,25 @@
+[2026-03-27 19:27:31] script started
+[2026-03-27 19:27:31] installation started
+[2026-03-27 19:27:44] nginx removed
+[2026-03-27 19:27:45] apache installed
+[2026-03-27 19:27:45] php already installed
+[2026-03-27 19:27:45] mysql already installed
+[2026-03-27 19:27:45] installation completed
+[2026-03-27 19:27:45] script ended
+[2026-03-27 19:27:57] script started
+[2026-03-27 19:27:57] installation started
+[2026-03-27 19:28:02] nginx installed
+[2026-03-27 19:28:02] php already installed
+[2026-03-27 19:28:02] mysql already installed
+[2026-03-27 19:28:02] installation completed
+[2026-03-27 19:28:02] script ended
+[2026-03-27 19:28:11] script started
+[2026-03-27 19:28:16] lamp stack removed
+[2026-03-27 19:28:16] script ended
+[2026-03-27 19:28:25] script started
+[2026-03-27 19:28:25] installation started
+[2026-03-27 19:28:31] apache installed
+[2026-03-27 19:28:31] php already installed
+[2026-03-27 19:28:31] mysql already installed
+[2026-03-27 19:28:31] installation completed
+[2026-03-27 19:28:31] script ended
